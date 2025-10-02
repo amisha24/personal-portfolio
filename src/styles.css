@@ -1,1 +1,225 @@
-/* You can add global styles to this file, and also import other style files */
+/* 🌸 Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* 🧭 Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s ease;
+  background: none;
+  box-shadow: none;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: #5c5c5c;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%; /* only underline expands on hover */
+}
+.navbar a:hover {
+  color: #000; /* text color changes on hover */
+  background: none;
+  box-shadow: none;
+}
+
+/* 🌐 Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: #f9e6eb; /* blush pink */
+  color: #333;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* 🪩 Sections */
+section {
+  padding: 7rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #222;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #5c5c5c;
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+/* ✨ Card Layout (used across Experience, Education, Projects) */
+.card {
+  background: none;
+  padding: 2rem;
+  border-radius: 0;
+  margin-bottom: 2rem;
+  transition: none;
+  box-shadow: none;
+  transform: none;
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.card h4 {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 0.8rem;
+}
+
+.card .duration {
+  display: inline-block;
+  font-style: italic;
+  color: #777;
+  margin-bottom: 1.2rem;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card li {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 0.7rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #5c5c5c;
+  font-weight: bold;
+}
+
+/* 🎓 Education Cards */
+.education-section .card {
+  border-left: none;
+  box-shadow: none;
+}
+
+/* 🚀 Project Cards */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: none;
+  padding: 2rem;
+  border-radius: 0;
+  transition: none;
+  box-shadow: none;
+  transform: none;
+}
+
+.project-card h3 {
+  font-size: 1.6rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.project-card .tech {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: #f0f0f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #555;
+}
+
+/* 📬 Contact Section */
+.contact-card {
+  text-align: center;
+  background: none;
+  padding: 2.5rem;
+  border-radius: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: none;
+}
+
+.contact-card a {
+  color: #5c5c5c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* ✨ Responsive */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
