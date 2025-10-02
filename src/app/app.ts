@@ -1,4 +1,5 @@
 import { Component, signal } from '@angular/core';
+<<<<<<< HEAD
 import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -43,4 +44,16 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('personal-portfolio');
+=======
+import { RouterOutlet } from '@angular/router';
+
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet],
+  templateUrl: './app.html',
+  styleUrl: './app.css'
+})
+export class App {
+  protected readonly title = signal('portfolio');
+>>>>>>> 842fe50386e49e3e4541a6569e80665a55f2c0f4
 }

@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "personal-portfolio": {
+=======
+    "portfolio": {
+>>>>>>> 842fe50386e49e3e4541a6569e80665a55f2c0f4
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -58,10 +62,17 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "buildTarget": "personal-portfolio:build:production"
             },
             "development": {
               "buildTarget": "personal-portfolio:build:development"
+=======
+              "buildTarget": "portfolio:build:production"
+            },
+            "development": {
+              "buildTarget": "portfolio:build:development"
+>>>>>>> 842fe50386e49e3e4541a6569e80665a55f2c0f4
             }
           },
           "defaultConfiguration": "development"
@@ -88,6 +99,10 @@
     }
   },
   "cli": {
+<<<<<<< HEAD
     "analytics": "f4537c54-7c02-4a6e-b892-77def41648d3"
+=======
+    "analytics": "9a7259be-a95f-4f0a-9673-2026555e3488"
+>>>>>>> 842fe50386e49e3e4541a6569e80665a55f2c0f4
   }
 }

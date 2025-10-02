@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* 🌸 Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
@@ -223,3 +224,6 @@ h2::after {
     grid-template-columns: 1fr;
   }
 }
+=======
+/* You can add global styles to this file, and also import other style files */
+>>>>>>> 842fe50386e49e3e4541a6569e80665a55f2c0f4

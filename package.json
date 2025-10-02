@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "personal-portfolio",
+=======
+  "name": "portfolio",
+>>>>>>> 842fe50386e49e3e4541a6569e80665a55f2c0f4
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +11,11 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+<<<<<<< HEAD
     "serve:ssr:personal-portfolio": "node dist/personal-portfolio/server/server.mjs"
+=======
+    "serve:ssr:portfolio": "node dist/portfolio/server/server.mjs"
+>>>>>>> 842fe50386e49e3e4541a6569e80665a55f2c0f4
   },
   "prettier": {
     "printWidth": 100,
@@ -42,6 +50,10 @@
     "@types/express": "^5.0.1",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^20.17.19",
+<<<<<<< HEAD
+=======
+    "angular-cli-ghpages": "^2.0.3",
+>>>>>>> 842fe50386e49e3e4541a6569e80665a55f2c0f4
     "jasmine-core": "~5.9.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
@@ -50,4 +62,8 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.9.2"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 842fe50386e49e3e4541a6569e80665a55f2c0f4

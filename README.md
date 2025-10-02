@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # PersonalPortfolio
+=======
+# Portfolio
+>>>>>>> 842fe50386e49e3e4541a6569e80665a55f2c0f4
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3.
 

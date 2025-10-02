@@ -20,6 +20,10 @@ describe('App', () => {
     const fixture = TestBed.createComponent(App);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
+<<<<<<< HEAD
     expect(compiled.querySelector('h1')?.textContent).toContain('Hello, personal-portfolio');
+=======
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, portfolio');
+>>>>>>> 842fe50386e49e3e4541a6569e80665a55f2c0f4
   });
 });
