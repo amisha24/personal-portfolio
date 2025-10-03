@@ -307,3 +307,21 @@ h2::after {
     grid-template-columns: 1fr;
   }
 }
+
+/* 💾 Download CV Button */
+.btn.primary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #7D7D7D; /* grey color */
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+}
+
+.btn.primary:hover {
+  background-color: #5c5c5c; /* darker grey on hover */
+  transform: translateY(-2px);
+}

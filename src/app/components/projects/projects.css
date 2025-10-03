@@ -8,3 +8,21 @@
 .project-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Project button styling */
+.project-card .btn.primary {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #7D7D7D; /* grey color complementing blush pink */
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+}
+
+.project-card .btn.primary:hover {
+  background-color: #5c5c5c; /* slightly darker grey on hover */
+  transform: translateY(-2px);
+}
