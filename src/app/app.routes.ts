@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-<<<<<<< HEAD
 import { AboutComponent } from './components/about/about';
 import { ExperienceComponent } from './components/experience/experience';
 import { EducationComponent } from './components/education/education';
@@ -14,7 +13,3 @@ export const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact', component: ContactComponent },
 ];
-=======
-
-export const routes: Routes = [];
->>>>>>> 842fe50386e49e3e4541a6569e80665a55f2c0f4

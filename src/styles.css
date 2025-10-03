@@ -1,38 +1,47 @@
-<<<<<<< HEAD
 /* 🌸 Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
-/* 🧭 Navbar */
-.navbar {
+/* 🧭 Sidebar */
+.sidebar {
   position: fixed;
+  left: -250px; /* hide it off-screen */
   top: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: center;
-  backdrop-filter: blur(10px);
+  width: 250px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
   z-index: 1000;
+  padding: 1rem;
+  overflow-y: auto;
 }
-
-.navbar ul {
+/* When open */
+.sidebar.show {
+  left: 0;
+}
+.sidebar ul {
   list-style: none;
   display: flex;
-  gap: 2.5rem;
+  flex-direction: column;
+  gap: 1.8rem;
+  margin-top: 2rem;
+  padding: 0;
 }
 
-.navbar a {
-  text-decoration: none;
-  color: #444;
+.sidebar a {
+  display: block;
+  padding: 0.75rem 0;
   font-weight: 600;
-  font-size: 1.1rem;
+  color: #444;
+  text-decoration: none;
   position: relative;
   transition: color 0.3s ease;
   background: none;
   box-shadow: none;
+  text-align: left;
 }
 
-.navbar a::after {
+.sidebar a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -43,13 +52,92 @@
   transition: width 0.3s ease;
 }
 
-.navbar a:hover::after {
-  width: 100%; /* only underline expands on hover */
+.sidebar a:hover::after {
+  width: 100%; /* underline expands on hover */
 }
-.navbar a:hover {
+
+.sidebar a:hover {
   color: #000; /* text color changes on hover */
   background: none;
   box-shadow: none;
+}
+
+/* Hamburger menu styles for mobile */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center the lines vertically */
+  align-items: center;     /* center horizontally */
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: 50px;
+  height: 50px; /* more square for better aesthetics */
+  cursor: pointer;
+  z-index: 3000; /* higher than sidebar */
+  background: rgba(255, 255, 255, 0.2); /* semi-transparent white background */
+  border-radius: 8px;
+  padding: 5px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.hamburger:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
+
+.hamburger div {
+  width: 35px;
+  height: 6px;
+  background-color: #ffffff; /* pure white lines */
+  border-radius: 3px;
+  margin: 4px 0;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+.hamburger:hover div {
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 1);
+}
+
+/* Main container */
+.main-container {
+  transition: margin-left 0.3s ease;
+}
+
+.main-container.shifted {
+  margin-left: 250px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    left: -250px;
+    background: #fff;
+    backdrop-filter: none;
+    padding: 2rem 1.5rem;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .sidebar.show {
+    left: 0;
+  }
+
+  .sidebar ul {
+    margin-top: 2rem;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .sidebar a {
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }
 
 /* 🌐 Global Styles */
@@ -215,15 +303,7 @@ h2::after {
     font-size: 2.2rem;
   }
 
-  .navbar ul {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
   .project-grid {
     grid-template-columns: 1fr;
   }
 }
-=======
-/* You can add global styles to this file, and also import other style files */
->>>>>>> 842fe50386e49e3e4541a6569e80665a55f2c0f4
