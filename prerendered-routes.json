@@ -1,0 +1,10 @@
+{
+  "routes": {
+    "/personal-portfolio": {},
+    "/personal-portfolio/about": {},
+    "/personal-portfolio/contact": {},
+    "/personal-portfolio/education": {},
+    "/personal-portfolio/experience": {},
+    "/personal-portfolio/projects": {}
+  }
+}
